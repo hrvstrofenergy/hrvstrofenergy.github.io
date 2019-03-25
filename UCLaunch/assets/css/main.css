@@ -1,0 +1,113 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #0b222b;
+  background-image: url("../images/dark-wood.png");
+  color: #FFFFFF;
+  text-shadow:5px 5px 10px #7E7E7E;
+}
+.countdownContainer{
+  margin-top: 10rem;
+}
+.logo img
+{
+  margin: 15rem auto;
+  width: 300px;
+}
+/****************** VIEWPORTS ******************/
+@media screen and (min-width: 1200px){
+li span {
+  display: block;
+  font-size: 15rem;
+  padding: 0 3rem;
+}
+ul {
+  display: inline;
+  padding-left: 0;
+}
+}
+@media screen and (max-width: 1200px){
+li span {
+  display: block;
+  font-size: 13rem;
+  padding: 0 2rem;
+}
+ul {
+  display: inline;
+  padding-left: 0;
+}
+.logo img
+{
+  margin: 13rem auto;
+  width: 280px;
+}
+}
+@media screen and (max-width: 1000px){
+li span {
+  display: block;
+  font-size: 10rem;
+  padding: 0 1rem;
+}
+ul {
+  display: inline;
+  padding-left: 0;
+}
+.logo img
+{
+  margin: 10rem auto;
+  width: 250px;
+}
+}
+@media screen and (max-width: 768px){
+li span {
+  display: block;
+  font-size: 8rem;
+  padding: 0 0.5rem;
+}
+ul {
+  display: inline;
+  padding-left: 0;
+}
+.logo img
+{
+  margin: 8rem auto;
+  width: 200px;
+}
+}
+@media screen and (max-width: 650px){
+.countdownContainer{
+    margin-top: 10rem;
+}
+li span {
+  display: block;
+  font-size: 8rem;
+  padding: 0 0.2rem;
+}
+ul {
+  display: block;
+  padding-left: 0;
+}
+
+}
+.container {
+
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+/* li span {
+  display: block;
+  font-size: 10rem;
+} */
