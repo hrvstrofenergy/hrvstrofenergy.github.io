@@ -6,13 +6,14 @@ body {
   background-image: url("../images/dark-wood.png");
   color: #FFFFFF;
   text-shadow:5px 5px 10px #7E7E7E;
+  font-family: 'Montserrat', sans-serif;
 }
 .countdownContainer{
   margin-top: 10rem;
 }
 .logo img
 {
-  margin: 15rem auto;
+  margin: 13rem auto;
   width: 300px;
 }
 /****************** VIEWPORTS ******************/
@@ -39,7 +40,7 @@ ul {
 }
 .logo img
 {
-  margin: 13rem auto;
+  margin: 10rem auto;
   width: 280px;
 }
 }
@@ -55,7 +56,7 @@ ul {
 }
 .logo img
 {
-  margin: 10rem auto;
+  margin: 8rem auto;
   width: 250px;
 }
 }
@@ -81,7 +82,7 @@ ul {
 }
 li span {
   display: block;
-  font-size: 8rem;
+  font-size: 5rem;
   padding: 0 0.2rem;
 }
 ul {
