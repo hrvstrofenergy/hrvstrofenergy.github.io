@@ -10,7 +10,7 @@ body {
 .countdownContainer{
   margin-top: 10rem;
 }
-.logo img
+.emotes img
 {
   margin: 15rem auto;
   width: 300px;
@@ -37,7 +37,7 @@ ul {
   display: inline;
   padding-left: 0;
 }
-.logo img
+.emotes img
 {
   margin: 13rem auto;
   width: 280px;
@@ -53,7 +53,7 @@ ul {
   display: inline;
   padding-left: 0;
 }
-.logo img
+.emotes img
 {
   margin: 10rem auto;
   width: 250px;
@@ -69,7 +69,7 @@ ul {
   display: inline;
   padding-left: 0;
 }
-.logo img
+.emotes img
 {
   margin: 8rem auto;
   width: 200px;
