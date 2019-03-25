@@ -12,83 +12,37 @@ body {
 }
 .emotes img
 {
-  margin: 15rem auto;
-  width: 300px;
-}
-/****************** VIEWPORTS ******************/
-@media screen and (min-width: 1200px){
-li span {
-  display: block;
-  font-size: 15rem;
-  padding: 0 3rem;
-}
-ul {
-  display: inline;
-  padding-left: 0;
-}
-}
-@media screen and (max-width: 1200px){
-li span {
-  display: block;
-  font-size: 13rem;
-  padding: 0 2rem;
-}
-ul {
-  display: inline;
-  padding-left: 0;
-}
-.emotes img
-{
-  margin: 13rem auto;
-  width: 280px;
-}
-}
-@media screen and (max-width: 1000px){
-li span {
-  display: block;
-  font-size: 10rem;
-  padding: 0 1rem;
-}
-ul {
-  display: inline;
-  padding-left: 0;
-}
-.emotes img
-{
-  margin: 10rem auto;
-  width: 250px;
-}
-}
-@media screen and (max-width: 768px){
-li span {
-  display: block;
-  font-size: 8rem;
-  padding: 0 0.5rem;
-}
-ul {
-  display: inline;
-  padding-left: 0;
-}
-.emotes img
-{
-  margin: 8rem auto;
+  margin: 0 auto;
   width: 200px;
 }
+.mainImg{
+  width: 600px;
+  margin: 5rem auto;
 }
-@media screen and (max-width: 650px){
-.countdownContainer{
-    margin-top: 10rem;
+/****************** VIEWPORTS ******************/
+@media screen and (max-width: 695px){
+.mainImg
+{
+    width: 400px;
+    margin: 5rem auto;
 }
-li span {
-  display: block;
-  font-size: 8rem;
-  padding: 0 0.2rem;
+.emotes img
+{
+    margin: 0 auto;
+    width: 150px;
 }
-ul {
-  display: block;
-  padding-left: 0;
 }
-
+@media screen and (max-width: 540px){
+.mainImg
+{
+    width: 350px;
+    margin: 5rem auto;
+}
+.emotes img
+{
+    margin: 0 auto;
+    width: 100px;
+}
 }
 .container {
 
