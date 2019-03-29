@@ -19,6 +19,12 @@ body {
 ul{
   margin: 0;
 }
+.footer a{
+  color: #3EAAE0;
+}
+.footer a:hover{
+  color: #75bbde;
+}
 .emote{
   width: 90%;
   display: flex;
@@ -44,7 +50,34 @@ ul{
   height: auto;
   vertical-align: middle;
 }
+footer{
+  margin-top: 5rem;
+  color: #3EAAE0;
+  text-shadow: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.footer{
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+/* ul.footer{
+  line-height: l;
+} */
+li.text{
+  font-size: 2.3em;
+  padding: 0.2em;
+  font-weight: 300;
+  line-height: inherit;
+  color: #c1c1c1;
 
+}
+li.icon{
+  margin-top: 0.2em;
+  font-size: 2.8em;
+  line-height: inherit;
+  padding: 0.2em;
+}
 /****************** VIEWPORTS ******************/
 @media screen and (min-width: 1200px){
 .countdownContainer li span {
@@ -111,6 +144,23 @@ ul {
   width: 200px;
 }
 }
+@media screen and (max-width: 600px){
+  li.text{
+    font-size: 2em;
+    padding: 0.2em;
+    font-weight: 300;
+    line-height: inherit;
+    color: #c1c1c1;
+
+  }
+  li.icon{
+    margin-top: 0.2em;
+    font-size: 2.8em;
+    line-height: inherit;
+    padding: 0.2em;
+  }
+
+}
 @media screen and (max-width: 650px){
 .countdownContainer{
     margin-top: 6rem;
@@ -129,6 +179,17 @@ ul {
     padding: 1rem 0.5rem;
   }
 }
+@media screen and (max-width: 532px){
+li.text{
+  position:absolute;
+left:0px;
+top:-500px;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+}
+
 .container {
 
   text-align: center;
