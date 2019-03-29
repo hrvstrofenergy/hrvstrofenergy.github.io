@@ -9,16 +9,45 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 .countdownContainer{
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 .logo img
 {
-  margin: 13rem auto;
+  margin: 10rem auto;
   width: 300px;
 }
+ul{
+  margin: 0;
+}
+.emote{
+  width: 90%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.emote li{
+  width: 128px;
+  padding: 1rem;
+}
+.emote img {
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+}
+
 /****************** VIEWPORTS ******************/
 @media screen and (min-width: 1200px){
-li span {
+.countdownContainer li span {
   display: block;
   font-size: 15rem;
   padding: 0 3rem;
@@ -29,7 +58,7 @@ ul {
 }
 }
 @media screen and (max-width: 1200px){
-li span {
+.countdownContainer li span {
   display: block;
   font-size: 13rem;
   padding: 0 2rem;
@@ -40,12 +69,12 @@ ul {
 }
 .logo img
 {
-  margin: 10rem auto;
+  margin: 8rem auto 2rem auto;
   width: 280px;
 }
 }
 @media screen and (max-width: 1000px){
-li span {
+.countdownContainer li span {
   display: block;
   font-size: 10rem;
   padding: 0 1rem;
@@ -56,12 +85,18 @@ ul {
 }
 .logo img
 {
-  margin: 8rem auto;
+  margin: 6rem auto 5rem auto;
   width: 250px;
 }
 }
+@media screen and (max-width: 960px){
+  .emote li{
+    width: 100px;
+    padding: 0.7rem;
+  }
+}
 @media screen and (max-width: 768px){
-li span {
+.countdownContainer li span {
   display: block;
   font-size: 8rem;
   padding: 0 0.5rem;
@@ -72,15 +107,15 @@ ul {
 }
 .logo img
 {
-  margin: 8rem auto;
+  margin: 5rem auto 5rem auto;
   width: 200px;
 }
 }
 @media screen and (max-width: 650px){
 .countdownContainer{
-    margin-top: 10rem;
+    margin-top: 6rem;
 }
-li span {
+.countdownContainer li span {
   display: block;
   font-size: 5rem;
   padding: 0 0.2rem;
@@ -89,7 +124,10 @@ ul {
   display: block;
   padding-left: 0;
 }
-
+.emote li{
+    width: 85px;
+    padding: 0.2rem;
+  }
 }
 .container {
 
