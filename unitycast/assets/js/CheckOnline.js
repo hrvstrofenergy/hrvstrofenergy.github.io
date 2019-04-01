@@ -1,8 +1,9 @@
 $(function() {
 	//establish variables
-	var $displayTable = $('#displayTable');
-	var $displayTable2 = $('#displayTable2');
-	var loginNames = ['AntonioAsh', 'BraindeadSurki', 'Chachava', 'Ember798', 'Fibrowolf', 'HrvstrOfEnergy', 'Liza_M', 'MuuMuuFace', 'NeenSheep', 'TheOptionalOath', 'princess___lissy', 'TheQuietestGirl'];
+	var $displayTable = $("#displayTable");
+	var $displayTable2 = $("#displayTable2");
+	var loginNames = ["TheSTINGIN", "AntonioAsh", "Atlas", "Chachava", "Crittle888", "Grimli", "HrvstrOfEnergy",
+                    "Jansey", "princess___lissy", "TheOptionalOath", "WhiteFyr"]
 	var urlString = "";
 	var urlString2 = "";
 	var statusString = "";
