@@ -1,19 +1,8 @@
 body {
   margin: 0;
   font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #0B222B;
-}
-
-header{
-  background-image:url(../images/ucbanner3.jpg);
-  background-position: center top;
-
-  background-size: contain;
-  background-repeat:no-repeat;
-  height: 500px;
-  margin: 0 auto;
-
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  background-color: #000000;
 }
 
 p.navbarHeading
@@ -28,6 +17,11 @@ p.navbarHeading
 .dropdown-item{
   list-style-type: none;
   color: #FFFFFF;
+
+}
+a.dropdown-item:hover{
+
+  color: #3EAAE0;
 }
 .dropdown-menu {
   background-color: #0B222B;
@@ -36,12 +30,35 @@ p.navbarHeading
   position: fixed;
   top: 0;
   width: 100%;
-}
+  z-index: 7;
+  background: rgb(2,0,36);
+background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgba(11,34,43,1) 22%, rgba(0,212,255,0) 100%);
+  /* background-attachment: fixed; */
 
+  margin: 0 auto;
+}
+.nav-item{
+  width: 60%;
+  padding: 0 6px;
+  margin: 0 8px;
+  background-color: rgba(62, 120, 224, 0.4);
+  border-radius: 5px;
+}
+.navbar{
+  background-color: rgba(126, 126, 126, 0.3);
+}
+header{
+  margin-top: 75px;
+}
 .content {
   padding: 16px;
 
 }
 section{
   height: 1010px;
+}
+.headerstmt{
+  margin-top: 150px;
+  color: #3EAAE0;
+  text-align: right;
 }
