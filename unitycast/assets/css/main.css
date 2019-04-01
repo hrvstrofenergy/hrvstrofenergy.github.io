@@ -75,7 +75,7 @@ ul.topNav li a, .dropbtn
 }
 ul.topNav li a:hover
 {
-	text-shadow: 0 0.2em 1em #B893E5, 0 0.2em 1em #B893E5, 0 0.2em 1em #B893E5;
+	text-shadow: 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0;
 }
 ul.topNav li.icon
 {
@@ -92,7 +92,7 @@ p.navbarHeading{
   color: #0B222B;
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
-  padding: 0.8em 0.2em;
+  padding: 0.4em 0.2em;
   text-transform: uppercase;
 }
 /* The dropdown container */
@@ -110,14 +110,14 @@ p.navbarHeading{
   line-height: 4.6rem;
 }
 .dropbtn:hover{
-  text-shadow: 0 0.2em 1em #B893E5, 0 0.2em 1em #B893E5, 0 0.2em 1em #B893E5;
+  text-shadow: 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #3EAAE0;
   min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -153,7 +153,9 @@ p.navbarHeading{
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #7e7e7e;
+	background-color: #0b222b;
+  background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 3.75rem;
@@ -169,8 +171,8 @@ p.navbarHeading{
 	transition: 0.3s;
 }
 .sideNav .dropdown button.dropbtn{
-  display: block;
-  padding-left: 2rem;
+    display: block;
+    padding-left: 2rem;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
