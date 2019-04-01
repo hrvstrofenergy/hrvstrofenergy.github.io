@@ -2,8 +2,7 @@ $(function() {
 	//establish variables
 	var $displayTable = $("#displayTable");
 	var $displayTable2 = $("#displayTable2");
-	var loginNames = ["TheSTINGIN", "AntonioAsh", "Atlas", "Chachava", "Crittle888", "Grimli", "HrvstrOfEnergy",
-                    "Jansey", "princess___lissy", "TheOptionalOath", "WhiteFyr"]
+	var loginNames = ["AntonioAsh", "BraindeadSurki", "Chachava", "Crittle888", "Ember798", "FibroWolf", "HrvstrOfEnergy","Liza_M", "MuuMuuFace", "NeenSheep", "TheOptionalOath", "princess___lissy", "TheQuietestGirl"]
 	var urlString = "";
 	var urlString2 = "";
 	var statusString = "";
@@ -119,7 +118,6 @@ $(function() {
 
 						}
 					}
-					getStreamsofOnline();
 					newTable(profileData);
 				}
 
@@ -184,18 +182,18 @@ function getImg(streamer, profileData){
 }
 
 
-  function getStreamsofOnline() {
-		console.log('In getStreamsofOnline but am I really?');
-		var string ="<div style=\"text-align: center\">";
-    for (var i = 0; i < liveStreamers.length; i++) {
-
-      var source = "https://player.twitch.tv/?channel="+liveStreamers[i];
-      var iframe = "<iframe src="+ source + " height='360' width='640' frameborder='0' scrolling='yes' allowfullscreen='true'></iframe>";
-      console.log("iFrame = " + iframe);
-			string += iframe;
-
-  }
-	string += "</div>"
-	document.getElementById('streams').insertAdjacentHTML('beforeend', string);
-};
+//   function getStreamsofOnline() {
+// 		console.log('In getStreamsofOnline but am I really?');
+// 		var string ="<div style=\"text-align: center\">";
+//     for (var i = 0; i < liveStreamers.length; i++) {
+//
+//       var source = "https://player.twitch.tv/?channel="+liveStreamers[i];
+//       var iframe = "<iframe src="+ source + " height='360' width='640' frameborder='0' scrolling='yes' allowfullscreen='true'></iframe>";
+//       console.log("iFrame = " + iframe);
+// 			string += iframe;
+//
+//   }
+// 	string += "</div>"
+// 	document.getElementById('streams').insertAdjacentHTML('beforeend', string);
+// };
 });
