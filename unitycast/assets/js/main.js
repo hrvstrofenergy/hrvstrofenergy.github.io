@@ -18,8 +18,8 @@ function myFunction() {
 
 
 function openNav(){
-	document.getElementById('mySideNav').style.width = '250px';
-	document.getElementById("main").style.marginLeft = '250px';
+	document.getElementById('mySideNav').style.width = '290px';
+	document.getElementById("main").style.marginLeft = '290px';
 }
 function closeNav(){
 	document.getElementById('mySideNav').style.width = '0';
