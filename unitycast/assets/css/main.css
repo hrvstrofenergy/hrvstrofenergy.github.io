@@ -1,47 +1,202 @@
-body {
-  margin: 0;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #0B222B;
-}
-
-header{
-  background-image:url(../images/ucbanner3.jpg);
-  background-position: center top;
-
-  background-size: contain;
-  background-repeat:no-repeat;
-  height: 500px;
-  margin: 0 auto;
-
-}
-
-p.navbarHeading
+body
 {
+	font-size: 100%;
+}
+/********************************TYPOGRAPHY********************************/
+h1, header p
+{
+	font-family: Verdana, Arial, sans-serif;
+	color: #FFFFFF;
+}
+h1
+{
+	font-size: 3.03875rem;
+	font-weight: bold;
+	line-height: 3.75rem;
+	text-shadow: 0 0 0.6em #269491, 0 0 0.6em #269491, 0 0 0.6em #269491;
+}
+header p
+{
+	font-size: 1.826875rem;
+	line-height: 2.8125rem;
+}
+nav li, h2, section p
+{
+	text-align: center;
+}
+nav li a, h2, section p, footer
+{
+	font-family: 'Montserrat', sans-serif;
+
+}
+nav li a, h2
+{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+nav li a
+{
+	text-decoration: none;
+	color: #000000;
+	font-size: 1.25rem;
+}
+nav li a:hover
+{
+	color: #000000;
+	text-shadow: 0 0 0.6em #3EAAE0, 0 0 0.6em #3EAAE0, 0 0 0.6em #3EAAE0;
+  text-decoration: none;
+}
+h2
+{
+	font-size: 3.75rem;
+}
+section p0B222B
+{
+	font-size: 1.5rem;
+	line-height: 2rem;
+	text-align: center;
+	color: #5f5f5f;
+}
+footer p.eduDisclaimer
+{
+	font-size: 0.875rem;
+	color: #aeaeae;
+}
+footer p
+{
+	font-size: 1rem;
+	color: #FFFFFF;
+}
+/********************************HEADER SECTION********************************/
+header
+{
+	width: 100%;
+	background-image: url("../images/headerBG.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #432960;
+}
+h1, header p
+{
+	text-align: right;
+}
+h1
+{
+	margin-top: 32.8125rem;
+}
+header p
+{
+	margin-bottom: 7.3125rem;
+}
+header img
+{
+  width: 30%;
+}
+/********************************NAV SECTION********************************/
+nav
+{
+	width: 100%;
+	background-color: rgba(124,144,168,0.6);
+	height: 7.5rem;
+	position: fixed;
+	top: 0;
+}
+nav img
+{
+	margin-top: 0.75rem; /*12px*/
+}
+nav ul.col-7
+{
+	float: right;
+}
+nav li
+{
+	float: left;
+	line-height: 7.5rem;
+	margin:0 1rem;
+}
+.dropdown-divider{
+  border-top: 2px solid #0B222B;
+}
+li.dropdown-item{
+  line-height: 2;
+}
+.dropdown-menu p{
   font-weight: bold;
-  color: #3EAAE0;
-  font-size: 20px;
-}
-.navbar img{
-  width: 5em;
-}
-.dropdown-item{
-  list-style-type: none;
-  color: #FFFFFF;
-}
-.dropdown-menu {
+  font-size: 18px;
+  margin-bottom: 0.8rem;
+  line-height: 2;
+  text-transform: uppercase;
   background-color: #0B222B;
+  color: #ffffff;
 }
-#navbar{
-  position: fixed;
-  top: 0;
-  width: 100%;
+.dropdown-menu p:hover{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 0.8rem;
+  line-height: 2;
+  text-transform: uppercase;
+  background-color: #0B222B;
+  color: #ffffff;
+}
+/********************************MAIN SECTION********************************/
+main
+{
+	width: 100%
+}
+h2
+{
+	margin: 4.25rem 0 3.625rem 0;
+}
+section p
+{
+	margin-bottom: 0.625rem;
 }
 
-.content {
-  padding: 16px;
-
+section p:last-of-type
+{
+	padding-top: 0.9375rem;
+	margin-bottom: 4.25rem;
 }
-section{
-  height: 1010px;
+/********************************FOOTER SECTION********************************/
+footer
+{
+	width: 100%;
+	background-image: url("../images/black-thread.png");
+	background-repeat: repeat;
+	background-color: #595c90;
 }
+footer p
+{
+	margin: 3.75rem 0;
+}
+footer p:last-of-type
+{
+		float: right;
+		text-align: right;
+}
+/********************************GRID SYSTEM********************************/
+.grid
+{
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 0.625rem;
+}
+[class*="col-"]
+{
+    float: left;
+    margin-right: 1.79%
+}
+.col-1{width: 6.70%}
+.col-2{width: 15.18%}
+.col-3{width: 23.66%}
+.col-4{width: 32.14%}
+.col-5{width: 40.63%}
+.col-6{width: 49.11%}
+.col-7{width: 57.59%}
+.col-8{width: 66.07%}
+.col-9{width: 74.55%}
+.col-10{width: 83.04%}
+.col-11{width: 91.52%}
+.col-12{width: 100%}
+1
