@@ -2,7 +2,8 @@ body {
   margin: 0;
   font-size: 28px;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  background-color: #000000;
+  background-color: #0B2220;
+  background-image: url("../images/dark-wood.png");
 }
 
 p.navbarHeading
@@ -19,9 +20,14 @@ p.navbarHeading
   color: #FFFFFF;
 
 }
-a.dropdown-item:hover{
+a.nav-link:hover{
 
   color: #3EAAE0;
+  background-color: rgba(62, 120, 224, 0.4);
+  border-radius: 5px;
+  /*
+  padding: 0 6px; */
+  margin: 0 8px;
 }
 .dropdown-menu {
   background-color: #0B222B;
@@ -31,24 +37,22 @@ a.dropdown-item:hover{
   top: 0;
   width: 100%;
   z-index: 7;
-  background: rgb(2,0,36);
-background: linear-gradient(36deg, rgba(2,0,36,1) 0%, rgba(11,34,43,1) 22%, rgba(0,212,255,0) 100%);
-  /* background-attachment: fixed; */
-
-  margin: 0 auto;
+  background: rgb(11,34,43);
+  background: -webkit-linear-gradient(126deg, rgba(11,34,43,1) 0%, rgba(11,34,43,1) 35%, rgba(0,212,255,0) 100%);
+  background: -o-linear-gradient(126deg, rgba(11,34,43,1) 0%, rgba(11,34,43,1) 35%, rgba(0,212,255,0) 100%);
+  background: linear-gradient(216deg, rgba(11,34,43,1) 0%, rgba(11,34,43,1) 35%, rgba(0,212,255,0) 100%);
 }
 .nav-item{
   width: 60%;
   padding: 0 6px;
   margin: 0 8px;
-  background-color: rgba(62, 120, 224, 0.4);
-  border-radius: 5px;
 }
 .navbar{
   background-color: rgba(126, 126, 126, 0.3);
 }
 header{
   margin-top: 75px;
+
 }
 .content {
   padding: 16px;
@@ -56,9 +60,4 @@ header{
 }
 section{
   height: 1010px;
-}
-.headerstmt{
-  margin-top: 150px;
-  color: #3EAAE0;
-  text-align: right;
 }
