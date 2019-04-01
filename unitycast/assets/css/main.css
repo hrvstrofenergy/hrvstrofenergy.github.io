@@ -5,11 +5,25 @@ body
 	background-color: #0b222b;
   margin: 0;
 }
+h2, p{
+
+  margin: 2rem 1rem;
+
+}
+h2{
+  font-family: Montserrat, san-sans-serif;
+    Font-size: 1.75em; /* 28/16 */
+      font-weight: bold;
+}
+p{
+  font-family: Arial, sans-serif;
+    Font-size: 1.4375em; /* 23/16 */
+}
 /***************************************************GRID SYSTEM
 */
 .grid
 {
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 0.625rem;
 }
@@ -50,6 +64,7 @@ nav
 	width: 100%;
 	height: 6rem;
 	background-color: #0B222B;
+    background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
 }
 ul.topNav
 {
@@ -91,7 +106,9 @@ nav img{
 }
 p.navbarHeading{
   font-weight: bold;
-  color: #0B222B;
+  background-color: #0B222B;
+  color: #FFFFFF;
+
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
   padding: 0.4em 0.2em;
@@ -199,6 +216,13 @@ p.navbarHeading{
 	transition: margin-left 0.5s;
 	padding: 1rem;
 }
+/***************************************************MAIN CONTENT
+*/
+.mainContent{
+  background-color: #c8ad93;
+  border-radius: 3px;
+}
+
 /***************************************************MEDIA QUERIES
 */
 @media screen and (max-width: 1154px)
@@ -321,7 +345,79 @@ span
 {
 	font-style: italic;
 }
+/***************************************************STREAMER STATUS BOX
+*/
+#online-title {
+    width: 100%;
+    background-color: #6c72fa;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    margin-top: -0px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+}
+#online-title {
+    background-color: #00a650 !important;
+}
 
+#offline-title {
+    width: 100%;
+    background-color: #c0c0c0;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+}
+#offline-title {
+    color: #00a650 !important;
+    background-color: #000000 !important;
+}
+
+#twitch-widget {
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #262626;
+    display: block;
+    font-size: .9em;
+    margin: 5px 0 0 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+p {
+	color: white;
+}
+
+.streamerBox
+ {
+	 margin: auto;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 width: 300px;
+	 outline: 5px ridge grey;
+ }
+
+ .liveStreamers {
+	 margin: auto;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 max-width: 80%;
+	 min-width: 50%;
+	 width: fit-content;
+	 outline: 5px solid green;
+ }
 
 /* body {
   margin: 0;
