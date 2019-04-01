@@ -39,14 +39,15 @@ window.onclick = function(e) {
     }
   }
 }
-function myFunction() {
+
+function membersList() {
   document.getElementById("mySideNavDropdown").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
+  var myDropdown = document.getElementById("mySideNavDropdown");
     if (myDropdown.classList.contains('show')) {
       myDropdown.classList.remove('show');
     }
