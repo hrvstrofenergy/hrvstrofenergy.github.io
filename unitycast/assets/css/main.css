@@ -409,6 +409,25 @@ p.navbarHeading{
 }
 /***************************************************MEDIA QUERIES
 */
+@media screen and (max-width: 1240px)
+{
+	.socialMedia li{
+ 	 padding: 15px 7.5%;
+
+  }
+	ul.socialMedia{
+	 width: 21%;
+	 margin: 0 auto;
+	}
+}
+@media screen and (max-width: 1175px)
+{
+	.socialMedia li{
+	 padding: 15px 6%;
+
+	}
+
+}
 @media screen and (max-width: 1110px)
 {
 	.streamerBox img{
@@ -423,6 +442,14 @@ p.navbarHeading{
 	 margin-top: 23px;
 	 margin-right: 15px;
  }
+}
+@media screen and (max-width: 1020px)
+{
+	.socialMedia li{
+	 padding: 15px 4%;
+
+	}
+
 }
 @media screen and (max-width: 1154px)
 {
@@ -475,6 +502,15 @@ p.navbarHeading{
 	 font-size: 16px;
 	 margin-top: 18px;
 	 margin-right: 15px;
+	}
+}
+@media screen and (max-width: 860px)
+{
+
+	.socialMedia li{
+		font-size: 40px;
+		padding: 15px 4%;
+
 	}
 }
 @media screen and (max-width: 850px)
@@ -554,6 +590,16 @@ aside.col-4{
     padding-left: 1.5rem;
   }
 }
+@media screen and (max-width: 695px)
+{
+
+	ul.socialMedia{
+	 width: 28%;
+	}
+	.socialMedia li{
+		padding: 10px 5%;
+	}
+}
 @media screen and (max-width: 650px)
 {
 	ul.topNav li:not(:last-of-type)
@@ -577,6 +623,7 @@ aside.col-4{
 		font-size: 1.3em;
 	}
 }
+
 @media screen and (max-width: 577px)
 {
 	.streamerBox img{
@@ -587,6 +634,11 @@ aside.col-4{
 	 font-size: 20px;
 	 margin-top: 18px;
 	 margin-right: 15px;
+	}
+
+	.socialMedia li{
+		padding: 10px 3%;
+		font-size: 35px;
 	}
 }
 @media screen and (max-width: 550px)
@@ -622,9 +674,12 @@ aside.col-4{
 		margin: 0;
 	}
 }
-@media screen and (max-width: 480px)
+@media screen and (max-width: 430px)
 {
-
+	.socialMedia li{
+		padding: 10px 3%;
+		font-size: 25px;
+	}
 }
 @media screen and (max-width: 390px)
 {
