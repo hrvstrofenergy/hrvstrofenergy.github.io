@@ -373,6 +373,40 @@ p.navbarHeading{
 	 text-align: center;
 
  }
+ aside{
+	 margin-bottom: 90px;
+ }
+ /***************************************************FOOTER
+ */
+ footer{
+	 width: 100%;
+	 height: 5em;
+	 background-color: #0B222B;
+	 background-image: url(../images/gravel.png);
+	 position: fixed;
+	 bottom: 0;
+	 z-index: 7;
+ }
+ ul.socialMedia{
+	width: 25%;
+	margin: 0 auto;
+ }
+ .socialMedia li{
+	 float: left;
+	 font-size: 50px;
+	 line-height: 50px;
+	 text-align: center;
+	 padding: 15px 28px;
+
+ }
+.socialMedia li a{
+	text-decoration-color: none;
+	color: #3eaae0;
+}
+.socialMedia li a:hover{
+	color: #ffffff;
+	text-shadow: 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0;
+}
 /***************************************************MEDIA QUERIES
 */
 @media screen and (max-width: 1110px)
