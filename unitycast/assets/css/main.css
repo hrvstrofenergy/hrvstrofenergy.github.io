@@ -472,6 +472,21 @@ p.answer{
 	color: #184a5d;
 
 }
+.contactInfo a {
+	text-decoration: none;
+	color: #0b222b;
+}
+.contactInfo a {
+	text-decoration: none;
+	color: #0b222b;
+}
+.contactInfo a:hover {
+	color: #3eaae0;
+	text-shadow: 0 0.2em 1em #0b222b, 0 0.2em 1em #0b222b, 0 0.2em 1em #0b222b;
+}
+.contactInfo{
+	margin-bottom: 400px;
+}
 /***************************************************MEDIA QUERIES
 */
 @media screen and (max-width: 1240px)
