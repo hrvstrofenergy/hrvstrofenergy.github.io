@@ -374,7 +374,7 @@ p.navbarHeading{
 
  }
  aside{
-	 margin-bottom: 90px;
+	 margin-bottom: 70px;
  }
  /***************************************************FOOTER
  */
@@ -383,9 +383,8 @@ p.navbarHeading{
 	 height: 5em;
 	 background-color: #0B222B;
 	 background-image: url(../images/gravel.png);
-	 position: fixed;
-	 bottom: 0;
-	 z-index: 7;
+	 position: absolute;
+
  }
  ul.socialMedia{
 	width: 25%;
