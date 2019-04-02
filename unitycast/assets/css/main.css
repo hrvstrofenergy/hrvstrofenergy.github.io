@@ -587,6 +587,15 @@ aside.col-4{
 }
 @media screen and (max-width: 390px)
 {
+	.streamerBox img{
+		width: 30px;
+	}
+	.avatar a{
+
+	 font-size: 16px;
+	 margin-top: 16px;
+	 margin-right: 6px;
+	}
 	header
 	{
 		min-height: 9.375;
