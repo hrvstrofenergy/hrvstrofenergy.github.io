@@ -133,7 +133,6 @@ p.navbarHeading{
 /* The dropdown container */
 .dropdown {
   float: left;
-  overflow: hidden;
 
 }
 .sideDropdown button.dropbtn{
@@ -220,6 +219,9 @@ p.navbarHeading{
 	color: #FFFFFF;
 	display: block;
 	transition: 0.3s;
+}
+.sideNav a:last-of-type{
+	margin-bottom: 20px;
 }
 .sideNav .dropdown button.dropbtn{
     display: block;
