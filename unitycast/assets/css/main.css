@@ -5,19 +5,26 @@ body
 	background-color: #0b222b;
   margin: 0;
 }
-h2, p{
+p{
 
   margin: 2rem 1rem;
 
 }
 h2{
   font-family: Montserrat, san-sans-serif;
-    Font-size: 1.75em; /* 28/16 */
-      font-weight: bold;
+    Font-size: 3em; /* 32/16 */
+    font-weight: bold;
+		text-align: center;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+
 }
-p{
+.content p{
   font-family: Arial, sans-serif;
     Font-size: 1.4375em; /* 23/16 */
+		color: #3e3e3e;
+		margin: 0 2em;
+		line-height: 1.5em;
 }
 /***************************************************GRID SYSTEM
 */
@@ -44,6 +51,10 @@ p{
 .col-10{width: 83.04%}
 .col-11{width: 91.52%}
 .col-12{width: 100%}
+.row
+{
+	margin-bottom: 30px;
+}
 /***************************************************HEADER
 */
 header
@@ -108,7 +119,7 @@ p.navbarHeading{
   font-weight: bold;
   background-color: #0B222B;
   color: #FFFFFF;
-
+	margin: 0;
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
   padding: 0.4em 0.2em;
@@ -127,7 +138,9 @@ p.navbarHeading{
   background-color: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
   line-height: 4.6rem;
+
 }
+
 .dropbtn:hover{
   text-shadow: 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0;
 }
@@ -146,11 +159,12 @@ p.navbarHeading{
 .dropdown-content a.dropdown-item {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 3px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
   line-height: 1;
+	font-size: 1rem;
 }
 
 /* Add a grey background color to dropdown links on hover */
@@ -218,13 +232,135 @@ p.navbarHeading{
 }
 /***************************************************MAIN CONTENT
 */
-.mainContent{
+.content{
   background-color: #c8ad93;
   border-radius: 3px;
 }
+.content p{
+	text-align: justify;
+}
+.contentLogo img{
+	background-color: #0b222b;
+	margin: 40px 0 0 25%;
+	padding: 8%; /*50/16*/
+	border-radius: 30px;
+	width: 30%
+}
+/***************************************************STREAMER STATUS BOX
+*/
+#online-title, #offline-title{
+    background-color: #3eaae0;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inherit;
+		font-family: Montserrat, sans-serif;
+		text-transform: uppercase;
 
+	  border-bottom: 2px solid #000000;
+}
+
+#offline-title {
+    background-color: #0b222b;
+    color: #fff;
+		border-top: 2px solid #000000;
+}
+
+/* #twitch-widget {
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #262626;
+    display: block;
+    font-size: .9em;
+    margin: 5px 0 0 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    background-color: transparent;
+} */
+
+.streamerBox
+ {
+	 margin: auto;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 width: 80%;
+	 border: 2px solid #000000;
+	 background-color: #ffffff;
+
+ }
+ .streamerBox li{
+	 list-style-type: none;
+	 border-top: 2px solid #7e7e7e;
+ }
+ .streamerBox img{
+	 border-radius: 50%;
+	 width: 60px;
+	 margin-left: 10px;
+	 margin-top: 8px;
+	 margin-bottom: 8px;
+
+ }
+ .avatar{
+	 display: inline;
+ }
+.avatar a{
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Montserrat, sans-serif;
+	color: #0b222B;
+	font-size: 20px;
+	margin-top: 28px;
+	margin-right: 30px;
+	float: right;
+}
+.avatar a:hover{
+	color: #0B222B;
+	text-shadow: 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0;
+}
+}
+
+ .liveStreamers {
+	 margin: auto;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 max-width: 80%;
+	 min-width: 50%;
+	 width: fit-content;
+	 outline: 5px solid green;
+	 top: 20px;
+	 position: relative;
+	 top: -460px;
+ }
+ p.offlineMsg{
+	 font-family: Montserrat, sans-serif;
+	 margin: 0 auto;
+	 line-height: 1.8;
+	 text-align: center;
+
+ }
 /***************************************************MEDIA QUERIES
 */
+@media screen and (max-width: 1110px)
+{
+	.streamerBox img{
+		width: 50px;
+	}
+	.avatar{
+		display: inline;
+	}
+ .avatar a{
+
+	 font-size: 18px;
+	 margin-top: 23px;
+	 margin-right: 15px;
+ }
+}
 @media screen and (max-width: 1154px)
 {
   ul.topNav li:first-of-type {
@@ -244,6 +380,39 @@ p.navbarHeading{
   ul.topNav li:first-of-type {
       padding-left: 2rem;
   }
+	 p.offlineMsg{
+		 font-size: 1.2em;
+	 }
+	 .streamerBox img{
+		 width: 35px;
+	 }
+	 .avatar{
+		 display: inline;
+	 }
+	 .avatar a{
+
+		font-size: 18px;
+		margin-top: 23px;
+		margin-right: 15px;
+	 }
+}
+@media screen and (max-width: 885px)
+{
+	p.offlineMsg{
+		font-size: 1.2em;
+	}
+	.streamerBox img{
+		width: 30px;
+	}
+	.avatar{
+		display: inline;
+	}
+	.avatar a{
+
+	 font-size: 16px;
+	 margin-top: 18px;
+	 margin-right: 15px;
+	}
 }
 @media screen and (max-width: 850px)
 {
@@ -345,79 +514,7 @@ span
 {
 	font-style: italic;
 }
-/***************************************************STREAMER STATUS BOX
-*/
-#online-title {
-    width: 100%;
-    background-color: #6c72fa;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    margin-top: -0px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: inherit;
-}
-#online-title {
-    background-color: #00a650 !important;
-}
 
-#offline-title {
-    width: 100%;
-    background-color: #c0c0c0;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    margin-top: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: inherit;
-}
-#offline-title {
-    color: #00a650 !important;
-    background-color: #000000 !important;
-}
-
-#twitch-widget {
-    background: #fff;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    color: #262626;
-    display: block;
-    font-size: .9em;
-    margin: 5px 0 0 0;
-    padding: 0;
-    position: relative;
-    text-decoration: none;
-    width: 100%;
-    background-color: transparent;
-}
-
-p {
-	color: white;
-}
-
-.streamerBox
- {
-	 margin: auto;
-	 margin-top: 10px;
-	 margin-bottom: 10px;
-	 width: 300px;
-	 outline: 5px ridge grey;
- }
-
- .liveStreamers {
-	 margin: auto;
-	 margin-top: 10px;
-	 margin-bottom: 10px;
-	 max-width: 80%;
-	 min-width: 50%;
-	 width: fit-content;
-	 outline: 5px solid green;
- }
 
 /* body {
   margin: 0;

@@ -2,7 +2,7 @@ $(function() {
 	//establish variables
 	var $displayTable = $("#displayTable");
 	var $displayTable2 = $("#displayTable2");
-	var loginNames = ["AntonioAsh", "BraindeadSurki", "Chachava", "Crittle888", "Ember798", "FibroWolf", "HrvstrOfEnergy","Liza_M", "MuuMuuFace", "NeenSheep", "TheOptionalOath", "princess___lissy", "TheQuietestGirl"]
+	var loginNames = ["AntonioAsh", "BraindeadSurki", "Chachava", "Crittle888", "Ember798", "FibroWolf", "HrvstrOfEnergy","Liza_M", "MuuMuuFace", "NeenSheep", "TheOptionalOath", "Princess___Lissy", "TheQuietestGirl"]
 	var urlString = "";
 	var urlString2 = "";
 	var statusString = "";
@@ -138,17 +138,17 @@ function newTable(profileData) {
 	htmlString = '<div id="online-title" style="background-color:; color:">ONLINE</div>'
 	if (liveStreamers.length == 0) {
 		console.log('All offline');
-		htmlString += '<p>All streamers offline</p>'
+		htmlString += '<p class="offlineMsg">Casters are offline. :(</p>'
 	} else {
 		console.log('In else but am I really?');
 		for (var j = 0; j < liveStreamers.length; j++){
 			console.log(liveStreamers[j]);
-			htmlString += "<img src=\"" + getImg(liveStreamers[j], profileData) +
-			"\" height=\"30px\" width=\"30px\">" +
+			htmlString += "<li>" + "<img src=\"" + getImg(liveStreamers[j], profileData) +
+			"\" height=\"\" width=\"\"  oncontextmenu=\"return false;\">" + "<div class=\"avatar\">" +
 			"<a href=\"https://www.twitch.tv/" +
 			liveStreamers[j] +
 			"\" target=\"_blank\">" +
-			liveStreamers[j] + "</a><p>\n</p>";
+			liveStreamers[j] + "</a></div></li><p>\n</p>";
 		}
 
 
@@ -159,12 +159,12 @@ function newTable(profileData) {
 		htmlString += '<p>All streamers online</p>'
 	} else {
 		for (var j = 0; j < offStreamers.length; j++){
-			htmlString += "<img src=\"" + getImg(offStreamers[j], profileData) +
-			"\" height=\"30px\" width=\"30px\">" +
+			htmlString += "<li>" + "<img src=\"" + getImg(offStreamers[j], profileData) +
+			"\" height=\"\" width=\"\"  oncontextmenu=\"return false;\">" + "<div class=\"avatar\">" +
 			"<a href=\"https://www.twitch.tv/" +
 			offStreamers[j] +
 			"\" target=\"_blank\">" +
-			offStreamers[j] + "</a><p>\n</p>";
+			offStreamers[j] + "</a></div></li><p>\n</p>";
 		}
 	}
 
