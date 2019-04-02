@@ -134,6 +134,10 @@ p.navbarHeading{
 .dropdown {
   float: left;
   overflow: hidden;
+
+}
+.sideDropdown{
+	width: 100%;
 }
 
 /* Dropdown button */
@@ -158,6 +162,7 @@ p.navbarHeading{
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+		overflow: auto;
 }
 
 /* Links inside the dropdown */
@@ -180,6 +185,7 @@ p.navbarHeading{
 /* Show the dropdown menu on hover */
 .show  {
   display: block;
+	overflow: auto;
 }
 /***************************************************SIDE NAV
 */
@@ -557,14 +563,14 @@ aside.col-4{
 		width: 35px;
 	}
 	.streamerBox{
-		width: 190%;
+		width: 200%;
 		margin-left: 50%;
 	}
 	.avatar a{
 
 	 font-size: 18px;
 	 margin-top: 18px;
-	 margin-right: 10px;
+	 margin-right: 8px;
 	}
 	.content p{
 		width: 130%;
