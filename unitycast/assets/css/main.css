@@ -797,8 +797,15 @@ aside.col-4{
 		padding: 10px 3%;
 		font-size: 25px;
 	}
-	p.email{
-		font-size: 18px;
+	.email a{
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 400px)
+{
+	.MCavatars img{
+		margin-top:35px;
+		width: 80%;
 	}
 }
 @media screen and (max-width: 390px)
@@ -815,6 +822,9 @@ aside.col-4{
 	header
 	{
 		min-height: 9.375;
+	}
+	.email a{
+		font-size: 18px;
 	}
 
 }
