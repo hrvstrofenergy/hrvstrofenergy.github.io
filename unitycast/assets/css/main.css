@@ -256,6 +256,7 @@ p.navbarHeading{
 .content{
   background-color: #c8ad93;
   border-radius: 3px;
+	padding-top: 20px;
 }
 .content p{
 	text-align: justify;
@@ -276,7 +277,32 @@ p.navbarHeading{
 	margin: -1px;
 	padding: 0;
 	border: 0;
-}
+}/***************************************************STREAMER STATUS BOX for member pages
+*/
+.streamerBoxMember
+ {
+	 margin-left: 10%;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 width: 85%;
+	 border: 2px solid #000000;
+	 background-color: #ffffff;
+	 position: relative;
+	 top: -150px;
+
+ }
+ .streamerBoxMember li{
+	 list-style-type: none;
+	 border-top: 2px solid #7e7e7e;
+ }
+ .streamerBoxMember img{
+	 border-radius: 50%;
+	 width: 60px;
+	 margin-left: 10px;
+	 margin-top: 8px;
+	 margin-bottom: 8px;
+
+ }
 /***************************************************STREAMER STATUS BOX
 */
 #online-title, #offline-title{
@@ -408,6 +434,43 @@ p.navbarHeading{
 	color: #ffffff;
 	text-shadow: 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0, 0 0.2em 1em #3EAAE0;
 }
+/***************************************************MEMBER PAGES
+*/
+.memberTitle h2{
+	text-align: left;
+	margin-bottom: 0.8rem;
+}
+p.email{
+	margin: 0;
+}
+.MCavatars img{
+	margin-left: 16%;
+	width: 55%;
+}
+.email a{
+	text-decoration: none;
+	color: #184a5d;
+	font-size: 23px;
+	font-weight: normal;
+}
+.email a:hover{
+	color: #3eaae0;
+	text-shadow: 0 0.2em 1em #0b222b, 0 0.2em 1em #0b222b, 0 0.2em 1em #0b222b;
+}
+i.far {
+	padding-right: 0.15em;
+}
+p.bold{
+	font-weight: bold;
+	font-family: Montserrat, sans-serif;
+	font-size: 1.8em;
+	margin-left: 1.5em;
+}
+p.answer{
+	font-family: Montserrat, sans-serif;
+	margin-left: 2.5em;
+
+}
 /***************************************************MEDIA QUERIES
 */
 @media screen and (max-width: 1240px)
@@ -486,6 +549,17 @@ p.navbarHeading{
 		margin-top: 23px;
 		margin-right: 15px;
 	 }
+	 .streamerBoxMember img{
+		 width: 35px;
+	 }
+	 p.bold{
+		 font-size: 1.5em;
+	 }
+	.MCavatars img{
+		margin-top: 10px;
+		width: 80%;
+	}
+
 }
 @media screen and (max-width: 885px)
 {
@@ -544,6 +618,24 @@ p.navbarHeading{
 	.flex-direction{
 		flex-direction:column;
 	}
+	.streamerBoxMember{
+		position: inherit;
+		width: 130%;
+		margin-left: 80%;
+	}
+.streamerBoxMember p.offlineMsg{
+		width: 100%;
+	}
+	.interview{
+		width: 150%;
+		margin-bottom: 20px;
+	}
+	.MCavatars img{
+		margin-top: 10px;
+		width: 75%;
+		margin-left: 25%;
+
+	}
 }
 @media screen and (max-width: 795px)
 {
@@ -563,7 +655,7 @@ aside.col-4{
 	.avatar a{
 
 	 font-size: 20px;
-	 margin-top: 25px;
+	 margin-top: 20px;
 	 margin-right: 15px;
 	}
 	.flex-direction{
@@ -579,7 +671,14 @@ aside.col-4{
 		margin: 10% 25% 10% 55%;
 		border-radius: 20px;
 	}
-
+	.interview{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	h2.memberTitle
+	{
+		font-size: 2em;
+	}
 
 }
 @media screen and (max-width: 715px)
@@ -624,17 +723,26 @@ aside.col-4{
 		font-size: 1.3em;
 	}
 }
+@media screen and (max-width: 600px)
+{
+	.avatar a{
+
+	 font-size: 18px;
+	 margin-top: 18px;
+	 margin-right: 8px;
+	}
+}
 
 @media screen and (max-width: 577px)
 {
-	.streamerBox img{
-		width: 40px;
+	.streamerBox img, .streamerBoxMember img{
+		width: 38px;
 	}
 	.avatar a{
 
-	 font-size: 20px;
+	 font-size: 18px;
 	 margin-top: 18px;
-	 margin-right: 15px;
+	 margin-right: 10px;
 	}
 
 	.socialMedia li{
@@ -653,10 +761,10 @@ aside.col-4{
 		margin: 10% 25% 10% 50%;
 		border-radius: 20px;
 	}
-	.streamerBox img{
+	.streamerBox img, .streamerBoxMember img{
 		width: 35px;
 	}
-	.streamerBox{
+	.streamerBox, .streamerBoxMember{
 		width: 200%;
 		margin-left: 50%;
 	}
@@ -674,6 +782,14 @@ aside.col-4{
 		font-size: 1em;
 		margin: 0;
 	}
+	p.email{
+		margin: 0;
+	}
+	.MCavatars img{
+		margin-top:22px;
+		width: 80%;
+
+	}
 }
 @media screen and (max-width: 430px)
 {
@@ -684,7 +800,7 @@ aside.col-4{
 }
 @media screen and (max-width: 390px)
 {
-	.streamerBox img{
+	.streamerBox img, .streamerBoxMember img{
 		width: 30px;
 	}
 	.avatar a{
