@@ -557,14 +557,14 @@ aside.col-4{
 		width: 35px;
 	}
 	.streamerBox{
-		width:180%;
-		margin-left: 60%;
+		width: 190%;
+		margin-left: 50%;
 	}
 	.avatar a{
 
 	 font-size: 18px;
 	 margin-top: 18px;
-	 margin-right: 15px;
+	 margin-right: 10px;
 	}
 	.content p{
 		width: 130%;
