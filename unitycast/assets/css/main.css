@@ -53,8 +53,13 @@ h2{
 .col-12{width: 100%}
 .row
 {
-	margin-bottom: 30px;
+	display:inline-flex;
+  flex-wrap:wrap;
 }
+.flex-direction{
+  flex-direction:row;
+}
+
 /***************************************************HEADER
 */
 header
@@ -240,12 +245,22 @@ p.navbarHeading{
 .content p{
 	text-align: justify;
 }
-.contentLogo img{
+.contentLogoDesktop img{
 	background-color: #0b222b;
 	margin: 40px 0 0 25%;
 	padding: 8%; /*50/16*/
 	border-radius: 30px;
 	width: 30%
+}
+.contentLogoMobile {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
 }
 /***************************************************STREAMER STATUS BOX
 */
@@ -442,14 +457,54 @@ p.navbarHeading{
   ul.topNav li{
     padding-left: 3rem;
   }
+	.flex-direction{
+		flex-direction:column;
+	}
+}
+@media screen and (max-width: 795px)
+{
+.streamerBox p.offlineMsg {
+    width:100%;
+}
+aside.col-4{
+		float: none;
+}
+	.streamerBox{
+		width: 150%;
+		margin-left: 80%;
+	}
+	.streamerBox img{
+		width: 60px;
+	}
+	.avatar a{
+
+	 font-size: 20px;
+	 margin-top: 25px;
+	 margin-right: 15px;
+	}
+	.flex-direction{
+		flex-direction:column;
+	}
+	h2{
+		font-size: 2.5em;
+	}
+	.content p{
+		width: 135%;
+	}
+	.contentLogoDesktop img{
+		margin: 10% 25% 10% 55%;
+		border-radius: 20px;
+	}
+
+
 }
 @media screen and (max-width: 715px)
 {
   ul.topNav li:first-of-type {
-      padding-left: 5rem;
+      padding-left: 4.8rem;
   }
   ul.topNav li{
-    padding-left: 2rem;
+    padding-left: 1.5rem;
   }
 }
 @media screen and (max-width: 650px)
@@ -473,6 +528,18 @@ p.navbarHeading{
 	}
 
 }
+@media screen and (max-width: 577px)
+{
+	.streamerBox img{
+		width: 40px;
+	}
+	.avatar a{
+
+	 font-size: 20px;
+	 margin-top: 18px;
+	 margin-right: 15px;
+	}
+}
 @media screen and (max-width: 550px)
 {
 	.mainSection
@@ -480,6 +547,18 @@ p.navbarHeading{
 		float: none;
 		width: 100%;
 	}
+	.contentLogoDesktop img{
+		margin: 10% 25% 10% 50%;
+		border-radius: 20px;
+	}
+	.streamerBox img{
+		width: 35px;
+	}
+	.streamerBox{
+		width:180%;
+		margin-left: 60%;
+	}
+
 
 }
 @media screen and (max-width: 480px)
