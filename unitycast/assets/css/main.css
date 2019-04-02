@@ -797,6 +797,9 @@ aside.col-4{
 		padding: 10px 3%;
 		font-size: 25px;
 	}
+	p.email{
+		font-size: 18px;
+	}
 }
 @media screen and (max-width: 390px)
 {
